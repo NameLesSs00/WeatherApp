@@ -2,7 +2,44 @@
 
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-type WeatherData = any; //this will be a json file 
+// Define the expected weather data shape based on the API
+interface WeatherData {
+  coord?: {
+    lon: number;
+    lat: number;
+  };
+  name: string;
+  main: {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    humidity: number;
+    pressure: number;
+  };
+  weather: {
+    main: string;
+    description: string;
+    icon: string;
+  }[];
+  wind: {
+    speed: number;
+    deg?: number;
+    gust?: number;
+  };
+  clouds?: {
+    all: number;
+  };
+  visibility?: number;
+  sys?: {
+    country?: string;
+    sunrise?: number;
+    sunset?: number;
+  };
+  dt?: number; // timestamp
+  timezone?: number; // shift in seconds from UTC
+  base?: string;
+}
 
 interface LocationContextType {
   weather: WeatherData | null;

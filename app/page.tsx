@@ -45,27 +45,3 @@ export default function Page() {
   );
 }
 
-{/*
-  okay buddy we are almost done with the task one you have been working for around what 3 hours now thats a great job buddy now you have an hour to undrsatdn teh code as much as possible then go to the bathroom or restroom then you are done with task one 
-  
-  next you gotta solve the problem from yestayday and then its time to study a new algo and solve on it 
-  dont worry that would be so nice and easy 
-
-  the real challange now is to undrsatdn the code as much as you can and change it if needed also you are doing a great job so far but this project would be even nicer if you know what everything do and this is why you are an engineer you should 
-
-  you also should put this on linkedin this im happy how this project came out and i think it would be nice first project to post about it 
-
-  also add an iesster egg and say el asyi thdoes yall good luck 
-
-
-  dont forget to delete that 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-*/}

@@ -35,11 +35,12 @@ export default function GetLocationPage() {
           setWeather(weatherData); // Save in context
           router.push("/Weather"); // Navigate
         } catch (err) {
+          console.error("Error fetching weather:", err); // log error
           alert("Failed to fetch weather data.");
           setLoading(false);
         }
       },
-      (error) => {
+      () => {
         alert("Permission denied or failed to get location.");
         setLoading(false);
       }
